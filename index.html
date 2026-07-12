@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WMB Investments LLC | Websites &amp; Local Growth Systems for Service Businesses</title>
+<meta name="description" content="WMB Investments LLC builds professional websites, local SEO, and ongoing digital growth systems that help local service businesses get found and get calls.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="WMB Investments LLC | Websites & Local Growth Systems for Service Businesses">
+<meta property="og:description" content="Professional websites, local SEO, and ongoing digital growth systems for local service businesses.">
+<meta property="og:url" content="https://REPLACE-WITH-YOUR-DOMAIN.com">
+<!-- og:image intentionally omitted — add a real brand image before relying on social previews -->
+
+<!-- Favicon placeholder: replace with a branded icon/logo before launch -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F172A'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-size='30' font-weight='700' fill='%2314B8A6' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+
+<style>
+  :root {
+    --navy: #0F172A;
+    --navy-light: #1E293B;
+    --white: #FFFFFF;
+    --offwhite: #F8FAFC;
+    --text-dark: #0F172A;
+    --text-muted: #475569;
+    --text-on-navy-muted: #94A3B8;
+    --accent: #14B8A6;
+    --accent-dark: #0D9488;
+    --border: #E2E8F0;
+    --border-navy: #334155;
+    --radius: 10px;
+    --max-width: 1160px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-dark);
+    background: var(--white);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  section { scroll-margin-top: 84px; }
+
+  img { max-width: 100%; display: block; }
+
+  a { color: inherit; }
+
+  h1, h2, h3 {
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  p { margin: 0; }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: var(--accent);
+    color: var(--navy);
+    padding: 10px 16px;
+    z-index: 100;
+    font-weight: 600;
+    border-radius: 0 0 8px 0;
+  }
+  .skip-link:focus {
+    left: 0;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  summary:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--radius);
+    padding: 13px 24px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease, transform 150ms ease;
+    min-height: 44px;
+    line-height: 1;
+  }
+  .btn:active { transform: translateY(1px); }
+
+  .btn-primary {
+    background: var(--accent);
+    color: var(--navy);
+  }
+  .btn-primary:hover { background: var(--accent-dark); color: var(--white); }
+
+  .btn-outline {
+    background: transparent;
+    border-color: var(--border-navy);
+    color: var(--white);
+  }
+  .btn-outline:hover { background: rgba(255,255,255,0.08); border-color: var(--white); }
+
+  .btn-outline-dark {
+    background: transparent;
+    border-color: var(--border);
+    color: var(--navy);
+  }
+  .btn-outline-dark:hover { background: var(--offwhite); border-color: var(--navy); }
+
+  /* Header */
+  header.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--navy);
+    border-bottom: 1px solid var(--border-navy);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+  }
+
+  .logo {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  nav.primary-nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  nav.primary-nav a {
+    color: var(--text-on-navy-muted);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 200ms ease;
+  }
+  nav.primary-nav a:hover,
+  nav.primary-nav a:focus-visible { color: var(--white); }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: 1px solid var(--border-navy);
+    border-radius: 8px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .nav-toggle svg { stroke: var(--white); }
+
+  @media (max-width: 860px) {
+    nav.primary-nav {
+      position: absolute;
+      top: 76px;
+      left: 0;
+      right: 0;
+      background: var(--navy);
+      border-bottom: 1px solid var(--border-navy);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      padding: 8px 24px 20px;
+      display: none;
+    }
+    nav.primary-nav.open { display: flex; }
+    nav.primary-nav a {
+      width: 100%;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border-navy);
+    }
+    .header-actions .btn-primary.desktop-only { display: none; }
+    .nav-toggle { display: flex; }
+  }
+
+  /* Hero */
+  .hero {
+    background: var(--navy);
+    color: var(--white);
+    padding: 88px 0 96px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 56px;
+    align-items: center;
+  }
+
+  .eyebrow {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: clamp(34px, 5vw, 54px);
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+
+  .hero p.lede {
+    color: var(--text-on-navy-muted);
+    font-size: 18px;
+    max-width: 540px;
+    margin-bottom: 34px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  /* Browser mockup visual */
+  .browser-mock {
+    background: var(--navy-light);
+    border: 1px solid var(--border-navy);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.5);
+  }
+  .browser-mock .bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.03);
+    border-bottom: 1px solid var(--border-navy);
+  }
+  .browser-mock .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--border-navy);
+  }
+  .browser-mock .url {
+    margin-left: 8px;
+    height: 22px;
+    flex: 1;
+    background: rgba(255,255,255,0.05);
+    border-radius: 5px;
+  }
+  .browser-mock .body { padding: 24px; display: grid; gap: 12px; }
+  .browser-mock .line { height: 12px; border-radius: 4px; background: rgba(255,255,255,0.08); }
+  .browser-mock .line.w-70 { width: 70%; }
+  .browser-mock .line.w-40 { width: 40%; }
+  .browser-mock .block {
+    height: 90px;
+    border-radius: 8px;
+    margin-top: 6px;
+    background: linear-gradient(135deg, rgba(20,184,166,0.25), rgba(20,184,166,0.05));
+    border: 1px solid rgba(20,184,166,0.3);
+  }
+  .browser-mock .pill-row { display: flex; gap: 8px; margin-top: 4px; }
+  .browser-mock .pill { height: 30px; width: 84px; border-radius: 6px; background: rgba(255,255,255,0.06); }
+  .browser-mock .pill.accent { background: var(--accent); }
+
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero { padding: 56px 0 64px; }
+  }
+
+  /* Section headings */
+  .section-head {
+    max-width: 620px;
+    margin: 0 auto 48px;
+    text-align: center;
+  }
+  .section-head h2 {
+    font-size: clamp(26px, 3.4vw, 36px);
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .section-head p {
+    color: var(--text-muted);
+    margin-top: 14px;
+    font-size: 17px;
+  }
+
+  section.light { background: var(--white); padding: 88px 0; }
+  section.tint { background: var(--offwhite); padding: 88px 0; }
+  section.dark { background: var(--navy); color: var(--white); padding: 88px 0; }
+
+  /* Services */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .service-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    transition: border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+  }
+  .service-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 12px 28px -12px rgba(15,23,42,0.15);
+    transform: translateY(-2px);
+  }
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: rgba(20,184,166,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+  .service-icon svg { stroke: var(--accent-dark); }
+  .service-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .service-card p {
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+
+  @media (max-width: 980px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .services-grid { grid-template-columns: 1fr; }
+  }
+
+  /* How it works */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .step {
+    text-align: left;
+    padding: 0 8px;
+  }
+  .step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--navy);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+  .step h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+  .step p { color: var(--text-muted); font-size: 15px; }
+
+  @media (max-width: 860px) {
+    .steps { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* Current work */
+  .work-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .work-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .work-card > div > p.desc {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .check-list {
+    list-style: none;
+    margin: 0 0 26px;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+  .check-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--text-dark);
+  }
+  .check-list svg { flex-shrink: 0; margin-top: 2px; stroke: var(--accent-dark); }
+
+  .work-visual {
+    background: var(--offwhite);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .work-visual .tag {
+    align-self: flex-start;
+    background: rgba(20,184,166,0.15);
+    color: var(--accent-dark);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 999px;
+  }
+  .work-visual .location {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .work-visual .name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  @media (max-width: 860px) {
+    .work-card { grid-template-columns: 1fr; padding: 28px; }
+  }
+
+  /* Monthly / pricing */
+  .price-card {
+    max-width: 620px;
+    margin: 0 auto;
+    background: var(--navy);
+    color: var(--white);
+    border-radius: 16px;
+    padding: 40px;
+    text-align: left;
+  }
+  .price-card h3 { font-size: 22px; font-weight: 700; margin-bottom: 20px; }
+  .price-list {
+    list-style: none;
+    margin: 0 0 28px;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+  }
+  .price-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--text-on-navy-muted);
+    font-size: 15px;
+  }
+  .price-list svg { flex-shrink: 0; margin-top: 2px; stroke: var(--accent); }
+  .price-tag {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 24px;
+  }
+  .price-tag span {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-on-navy-muted);
+  }
+
+  /* About */
+  .about-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-wrap h2 {
+    font-size: clamp(26px, 3.4vw, 36px);
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 20px;
+  }
+  .about-wrap p {
+    color: var(--text-muted);
+    font-size: 17px;
+  }
+
+  /* Contact */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+  .contact-intro h2 {
+    font-size: clamp(26px, 3.4vw, 36px);
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .contact-intro p {
+    color: var(--text-muted);
+    font-size: 17px;
+    margin-bottom: 32px;
+  }
+  .contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .contact-detail svg { stroke: var(--accent-dark); flex-shrink: 0; }
+  .contact-detail a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--navy);
+    border-bottom: 1px solid var(--border);
+  }
+  .contact-detail a:hover { border-color: var(--accent-dark); }
+
+  form.contact-form {
+    display: grid;
+    gap: 18px;
+  }
+  .field { display: grid; gap: 6px; }
+  .field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .field input,
+  .field textarea {
+    font: inherit;
+    font-size: 16px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--offwhite);
+    color: var(--text-dark);
+    min-height: 44px;
+  }
+  .field textarea { min-height: 120px; resize: vertical; }
+  .field input:focus,
+  .field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(20,184,166,0.2);
+  }
+  .form-note {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+
+  @media (max-width: 860px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* Policies */
+  .policy-list {
+    max-width: 760px;
+    margin: 0 auto;
+    display: grid;
+    gap: 12px;
+  }
+  details.policy {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 4px 20px;
+  }
+  details.policy summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 16px 0;
+    color: var(--navy);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  details.policy summary::-webkit-details-marker { display: none; }
+  details.policy summary::after {
+    content: "+";
+    font-size: 20px;
+    color: var(--accent-dark);
+    font-weight: 400;
+  }
+  details.policy[open] summary::after { content: "\2212"; }
+  details.policy p {
+    color: var(--text-muted);
+    font-size: 15px;
+    padding-bottom: 18px;
+  }
+
+  /* Footer */
+  footer.site-footer {
+    background: var(--navy);
+    color: var(--text-on-navy-muted);
+    padding: 56px 0 32px;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border-navy);
+  }
+  .footer-brand p.name {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+  .footer-brand p.tag {
+    font-size: 14px;
+    max-width: 320px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .footer-links a {
+    color: var(--text-on-navy-muted);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .footer-links a:hover { color: var(--white); }
+  .footer-bottom {
+    padding-top: 24px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#top">WMB Investments LLC</a>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#current-work">Current Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#contact" class="btn btn-primary desktop-only">Start a Conversation</a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero" id="top" aria-label="Introduction">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Websites &bull; Local SEO &bull; Digital Systems</span>
+        <h1>Turn Your Online Presence Into a Business Asset</h1>
+        <p class="lede">WMB Investments LLC helps local service businesses build professional websites, improve their visibility online, generate more customer inquiries, and create systems that support long-term growth.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Start a Conversation</a>
+          <a href="#current-work" class="btn btn-outline">View Current Work</a>
+        </div>
+      </div>
+
+      <div class="browser-mock" aria-hidden="true">
+        <div class="bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <div class="url"></div>
+        </div>
+        <div class="body">
+          <div class="line w-70"></div>
+          <div class="line w-40"></div>
+          <div class="block"></div>
+          <div class="pill-row">
+            <div class="pill accent"></div>
+            <div class="pill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="light" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="services-heading">Services Built for Local Businesses</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+          </div>
+          <h3>Website Design &amp; Development</h3>
+          <p>Fast, responsive websites designed to build trust and turn visitors into calls and quote requests.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Local SEO</h3>
+          <p>Technical and on-page improvements that help businesses become more visible for the services and locations they serve.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Google Business Profile Support</h3>
+          <p>Profile optimization, service setup, review systems, posts, offers, photos, and ongoing improvements.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          </div>
+          <h3>Ongoing Website Management</h3>
+          <p>Content updates, performance monitoring, analytics, maintenance, and continuing improvements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="tint" id="how-it-works" aria-labelledby="how-heading">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="how-heading">How It Works</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number" aria-hidden="true">1</div>
+          <h3>Assess</h3>
+          <p>Review the business, competitors, website, Google presence, and current opportunities.</p>
+        </div>
+        <div class="step">
+          <div class="step-number" aria-hidden="true">2</div>
+          <h3>Build</h3>
+          <p>Create or improve the website, online profiles, review process, and supporting systems.</p>
+        </div>
+        <div class="step">
+          <div class="step-number" aria-hidden="true">3</div>
+          <h3>Improve</h3>
+          <p>Monitor performance, make ongoing updates, and continue building visibility over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Work -->
+  <section class="light" id="current-work" aria-labelledby="work-heading">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="work-heading">Current Work</h2>
+      </div>
+
+      <div class="work-card">
+        <div>
+          <h3>Barton's Tree Care</h3>
+          <p class="desc">A complete website and local growth project for an established Maryland tree-care company.</p>
+
+          <ul class="check-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Responsive website design</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Local SEO foundation</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Google Business Profile support</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Branded review-request system</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Performance optimization</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Ongoing website and content management</li>
+          </ul>
+
+          <a class="btn btn-outline-dark" href="https://bartonstreecare.com" target="_blank" rel="noopener noreferrer">View Barton's Tree Care</a>
+        </div>
+
+        <div class="work-visual">
+          <span class="tag">Live Project</span>
+          <span class="name">Barton's Tree Care</span>
+          <span class="location">Maryland &bull; Tree Care Services</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monthly Services -->
+  <section class="tint" id="monthly-services" aria-labelledby="monthly-heading">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="monthly-heading">Ongoing Monthly Support</h2>
+      </div>
+
+      <div class="price-card">
+        <h3>Website &amp; Local Growth Management</h3>
+        <ul class="price-list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Website management</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Local SEO improvements</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Google Business Profile support</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Content and service updates</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Review-system support</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Analytics and performance monitoring</li>
+        </ul>
+        <p class="price-tag">Plans starting at $750<span> / month</span></p>
+        <a href="#contact" class="btn btn-primary">Discuss Your Business</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="light" id="about" aria-labelledby="about-heading">
+    <div class="container about-wrap">
+      <h2 id="about-heading">Built Around Real Business Outcomes</h2>
+      <p>WMB Investments LLC works directly with local service businesses to improve how they are presented, discovered, and contacted online. Every project is built around clear communication, practical improvements, and systems the business can continue using over time.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="tint" id="contact" aria-labelledby="contact-heading">
+    <div class="container contact-grid">
+      <div class="contact-intro">
+        <h2 id="contact-heading">Start a Conversation</h2>
+        <p>Tell me about your business, what you currently have online, and what you would like to improve.</p>
+
+        <div class="contact-detail">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          <span>Email: <a href="mailto:INSERT_BUSINESS_EMAIL">[INSERT BUSINESS EMAIL]</a></span>
+        </div>
+        <div class="contact-detail">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Phone: <a href="tel:INSERT_BUSINESS_PHONE">[INSERT BUSINESS PHONE]</a></span>
+        </div>
+      </div>
+
+      <div>
+        <!-- FORM ENDPOINT PLACEHOLDER: this form does not submit anywhere yet.
+             Wire it to a real endpoint (e.g. Formspree, Getform, Web3Forms) or a
+             backend route, then remove the JS placeholder handler below. -->
+        <form class="contact-form" id="contact-form" action="#" method="POST">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="business">Business Name</label>
+            <input type="text" id="business" name="business" autocomplete="organization" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note" id="form-note" role="status">This form is not yet connected to an email or CRM endpoint. Please use the email or phone link above until it is.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policies -->
+  <section class="light" id="policies" aria-labelledby="policies-heading">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="policies-heading">Service &amp; Billing Policies</h2>
+      </div>
+
+      <div class="policy-list">
+        <details class="policy" id="service-terms">
+          <summary>Service Terms</summary>
+          <p>Services, scope, timing, and monthly deliverables are agreed upon with each client before payment.</p>
+        </details>
+
+        <details class="policy" id="billing">
+          <summary>Billing</summary>
+          <p>Recurring plans are billed monthly until canceled according to the applicable client agreement.</p>
+        </details>
+
+        <details class="policy" id="cancellation">
+          <summary>Cancellation</summary>
+          <p>Clients may cancel according to the terms in their signed service agreement. Any work already completed or billing periods already started may remain payable.</p>
+        </details>
+
+        <details class="policy" id="refunds">
+          <summary>Refunds</summary>
+          <p>Because services involve customized digital work and ongoing labor, completed work is generally non-refundable. Any exception will be handled according to the signed client agreement.</p>
+        </details>
+
+        <details class="policy" id="privacy">
+          <summary>Privacy</summary>
+          <p>Information submitted through this website is used only to respond to inquiries, provide requested services, and manage client relationships. It is not sold to third parties.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="name">WMB Investments LLC</p>
+        <p class="tag">Websites &amp; Local Growth Systems for Service Businesses</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#current-work">Current Work</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#service-terms">Service Terms</a>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 WMB Investments LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('nav-toggle');
+    var nav = document.getElementById('primary-nav');
+
+    toggle.addEventListener('click', function () {
+      var isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    function openDetailsFromHash() {
+      var hash = window.location.hash.slice(1);
+      if (!hash) return;
+      var el = document.getElementById(hash);
+      if (el && el.tagName === 'DETAILS') {
+        el.open = true;
+      }
+    }
+    window.addEventListener('DOMContentLoaded', openDetailsFromHash);
+    window.addEventListener('hashchange', openDetailsFromHash);
+    openDetailsFromHash();
+
+    var form = document.getElementById('contact-form');
+    var note = document.getElementById('form-note');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      note.textContent = 'This form is not yet connected to an email or CRM endpoint. Please email or call using the details above — this message has not been sent.';
+      note.style.color = '#B45309';
+    });
+  })();
+</script>
+
+</body>
+</html>
