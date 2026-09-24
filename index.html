@@ -1322,10 +1322,10 @@
       </div>
 
       <div>
-        <!-- FORM ENDPOINT PLACEHOLDER: this form does not submit anywhere yet.
-             Wire it to a real endpoint (e.g. Formspree, Getform, Web3Forms) or a
-             backend route, then remove the JS placeholder handler below. -->
-        <form class="contact-form" id="contact-form" action="#" method="POST">
+        <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="fabe94f0-9ca8-4926-b957-b201b00d535e">
+          <input type="hidden" name="subject" value="New Inquiry – WMB Investments">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
           <div class="field">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" autocomplete="name" required>
@@ -1347,7 +1347,7 @@
             <textarea id="message" name="message" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="form-note" id="form-note" role="status">This form is not yet connected to an email or CRM endpoint. Please use the email or phone link above until it is.</p>
+          <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div>
@@ -1445,10 +1445,35 @@
 
     var form = document.getElementById('contact-form');
     var note = document.getElementById('form-note');
+    var btn = form.querySelector('button[type="submit"]');
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      note.textContent = 'This form is not yet connected to an email or CRM endpoint. Please email or call using the details above — this message has not been sent.';
-      note.style.color = '#FBBF24';
+      if (btn.disabled) return;
+      btn.disabled = true;
+      var originalText = btn.textContent;
+      btn.textContent = 'Sending…';
+      note.textContent = '';
+      note.removeAttribute('style');
+      fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(form) })
+        .then(function (res) { return res.json(); })
+        .then(function (json) {
+          if (json.success) {
+            note.textContent = 'Message sent successfully. We’ll be in touch soon.';
+            note.style.color = '#4ADE80';
+            form.reset();
+          } else {
+            note.textContent = 'Something went wrong. Please try again.';
+            note.style.color = '#FBBF24';
+          }
+        })
+        .catch(function () {
+          note.textContent = 'Something went wrong. Please try again.';
+          note.style.color = '#FBBF24';
+        })
+        .finally(function () {
+          btn.disabled = false;
+          btn.textContent = originalText;
+        });
     });
 
     var heroWrap = document.getElementById('hero-stage-wrap');
